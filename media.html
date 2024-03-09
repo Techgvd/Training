@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+  <h2>Adding a Media in HTML</h2>
+  <fieldset>
+    <legend>Play/pause buttons  are outside player. </legend>
+<P> click on play/pause button</P>
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button>
+
+<video id="myVideo" width="400" height="220">
+  <source src="video.mp4" type="video/mp4"> 
+</video>
+<script> 
+let vid = document.getElementById("myVideo"); 
+function playVid() {vid.play();} 
+function pauseVid(){vid.pause();} 
+</script> 
+</fieldset>
+<fieldset>
+  <legend>Play/pause buttons  are inside player. </legend>
+<p>click on the video to play/pause to control. Note: video muted and autoplay </P>
+
+<video width="400" height="250" controls autoplay muted>
+  <source src=" video.mp4" type="video/mp4" >
+  </video>
+</fieldset>
+
+<fieldset>
+<legend>Adding audio player </legend>
+
+  <audio controls>
+    <source src="audio.mp3" type="audio/mp3" >
+    </audio> 
+  </fieldset>
+  <b>
+
+  </b>
+<fieldset>
+  <legend>Adding Youtube video. Note: Muted, autoplay and controls disabled</legend>
+<iframe width="400" height="250" src="https://www.youtube.com/embed/Zrv1EDIqHkY?controls=0&autoplay=1&mute=1"   >
+    </iframe>
+  </fieldset>
+    
+
+</body> 
+</html>
